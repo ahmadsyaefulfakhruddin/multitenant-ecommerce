@@ -1,9 +1,19 @@
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Input } from "@/components/ui/input";
+import { Progress } from "@/components/ui/progress";
+import { Textarea } from "@/components/ui/textarea";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Button>Ahmad</Button>
+    <div className="p-4">
+      <div className="flex flex-col gap-4 justify-start">
+        <Button variant={"elevated"}>I am button</Button>
+        <Input placeholder="I am input" />
+        <Textarea placeholder="i am textarea" />
+        <Progress value={50} />
+        <Checkbox />
+      </div>
     </div>
   );
 }
